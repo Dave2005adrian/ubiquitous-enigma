@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Game PH</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#learn-more">Learn More</a></li>
+                <li><a href="#feedback"> Feedback</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Quiz Game PH</h2>
+            <p>Test your knowledge about Philippine History! Click on "Quiz" to get started.</p>
+        </section>
+
+        <section id="quiz">
+            <h2>Quiz Time!</h2>
+            <p>Answer the following questions:</p>
+            <div id="questions">
+                <form id="quiz-form">
+                    
+                    <div class="question">
+                        <p>1. What is the capital city of the Philippines?</p>
+                        <input type="radio" name="q1" value="Cebu" id="q1a"><label for="q1a">Cebu</label><br>
+                        <input type="radio" name="q1" value="Manila" id="q1b"><label for="q1b">Manila</label><br>
+                        <input type="radio" name="q1" value="Batangas" id="q1c"><label for="q1c">Batangas</label><br>
+                    </div>
+                    <div class="question">
+                        <p>2. What is the national language of the Philippines?</p>
+                        <input type="radio" name="q2" value="Tagalog" id="q2a"><label for="q2a">Tagalog</label><br>
+                        <input type="radio" name="q2" value="Cebuano" id="q2b"><label for="q2b">Cebuano</label><br>
+                        <input type="radio" name="q2" value="Ilocano" id="q2c"><label for="q2c">Ilocano</label><br>
+                    </div>
+                    <div class="question">
+                        <p>3. Who is known as the national hero of the Philippines?</p>
+                        <input type="radio" name="q3" value="Jose Rizal" id="q3a"><label for="q3a">Jose Rizal</label><br>
+                        <input type="radio" name="q3" value="Andres Bonifacio" id="q3b"><label for="q3b">Andres Bonifacio</label><br>
+                        <input type="radio" name="q3" value="Emilio Aguinaldo" id="q3c"><label for="q3c">Emilio Aguinaldo</label><br>
+                    </div>
+                    <div class="question">
+                        <p>4. What is the largest island in the Philippines?</p>
+                        <input type="radio" name="q4" value="Luzon" id="q4a"><label for="q4a">Luzon</label><br>
+                        <input type="radio" name="q4" value="Visayas" id="q4b"><label for="q4b">Visayas</label><br>
+                        <input type="radio" name="q4" value="Mindanao" id="q4c"><label for="q4c">Mindanao</label><br>
+                    </div>
+                    <div class="question">
+                        <p>5. When did the Philippines gain independence from Spain?</p>
+                        <input type="radio" name="q5" value="June 12, 1898" id="q5a"><label for="q5a">June 12, 1898</label><br>
+                        <input type="radio" name="q5" value="July 4, 1946" id="q5b"><label for="q5b">July 4, 1946</label><br>
+                        <input type="radio" name="q5" value="August 21, 1983" id="q5c"><label for="q5c">August 21, 1983</label><br>
+                    </div>
+                    <div class="question"> 
+                        <p>6. Which Philippine island group that is know for its pristine beaches, coral reefs, and diving spot including apo island and balicasag?</p>
+                        <input type="radio" name="q6" value="" id="a"><label for="a">Visayas Island</label><br>
+                        <input type="radio" name="q6" value="" id="b"><label for="b">Batanes Island</label><br>
+                        <input type="radio" name="q6" value="" id="c"><label for="c">Caramoan Island</label><br>
+                    </div>                    
+                    <button type="button" id="submit-quiz">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="results">
+            <h2>Your Results</h2>
+            <p id="score">Your score will appear here after you complete the quiz.</p>
+            <ul id="wrong-answers"></ul>
+            <button id="play-again" style="display: none;">Play Again</button>
+        </section>
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <p>We value your feedback! Please rate our website and leave a comment below:</p>
+            <iframe src="https://forms.gle/yp3WsGE8sj5oKkLS7" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; DaveDecipulo Corp. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
