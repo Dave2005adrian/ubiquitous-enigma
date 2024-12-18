@@ -3,7 +3,12 @@ const correctAnswers = {
     q2: "Tagalog",
     q3: "Jose Rizal",
     q4: "Luzon",
-    q5: "June 12, 1898"
+    q5: "June 12, 1898",
+    q6: "a",
+    q7: "c",
+    q8:"b",
+    q9: "c",
+    q10: "c",
 };
 
 document.getElementById("submit-quiz").addEventListener("click", function () {
